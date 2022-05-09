@@ -55,6 +55,8 @@ class RegisterPage(FormView):
             return redirect('tasks')
         return super(RegisterPage, self).get(*args, **kwargs)
 
+
+# not needed
 class TaskDetail(LoginRequiredMixin, DetailView):
     model = Task
     context_object_name = 'task'
